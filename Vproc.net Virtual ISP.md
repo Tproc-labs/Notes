@@ -1,13 +1,13 @@
 *Moving from CentOS/Rocky to Debian 13 Stable “Trixie” (VirtualBox Simulation)*
 
-| Type           | Specs (Cores, RAM, Storage) | Role Summary |     |                                   |
-| -------------- | --------------------------- | ------------ | --- | --------------------------------- |
-| Vproc-Core-R1  | 2                           | 1            | 20  | Core Router                       |
-| Vproc-Edge-R1  | 1                           | 1            | 20  | edge router serving Customer 1    |
-| Vproc-Edge-R2  | 1                           | 1            | 20  | edge router serving Customer 2    |
-| Vproc-Services | 2                           | 2            | 25  | Services DNS/DHCP/Monitoring etc. |
-| Vproc-Cust1    | 1                           | 1            | 10  | Customer 1                        |
-| Vproc-Cust2    | 1                           | 1            | 10  | Customer 2                        |
+| Type           | vCores | RAM | Storage (GB) | Role Summary                      |
+| -------------- | ------ | --- | ------------ | --------------------------------- |
+| Vproc-Core-R1  | 2      | 1   | 20           | Core Router                       |
+| Vproc-Edge-R1  | 1      | 1   | 20           | edge router serving Customer 1    |
+| Vproc-Edge-R2  | 1      | 1   | 20           | edge router serving Customer 2    |
+| Vproc-Services | 2      | 2   | 25           | Services DNS/DHCP/Monitoring etc. |
+| Vproc-Cust1    | 1      | 1   | 10           | Customer 1                        |
+| Vproc-Cust2    | 1      | 1   | 10           | Customer 2                        |
 
 ---
 
