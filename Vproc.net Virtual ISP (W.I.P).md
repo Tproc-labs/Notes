@@ -289,8 +289,7 @@ zone "example.net" {
 ```
 
 create the zone:
-`cp /etc/bind/db.local /etc/bind/db.example.net`
-edit `/etc/bind/db.vproc.net`
+create `/etc/bind/db.example.net`
 ```
 $TTL    604800
 @       IN      SOA     ns1.example.net. admin.example.net. (
@@ -314,12 +313,12 @@ www     IN      A       10.0.0.2
 Run:
 ```
 named-checkconf
-named-checkzone vproc.net /etc/bind/db.vproc.net
+named-checkzone example.net /etc/bind/db.example.net
 ```
 
 Expected output:
 ```
-zone vproc.net/IN: loaded serial 3
+zone example.net/IN: loaded serial 3
 OK
 ```
 
@@ -339,7 +338,7 @@ dig www.example.net
 Expected result:
 ```
 ;; ANSWER SECTION:
-vproc.net.       604800 IN A 10.0.0.2
+example.net.       604800 IN A 10.0.0.2
 ```
 
 Now we have custom DNS records for our local mock-net
